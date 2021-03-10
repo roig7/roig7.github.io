@@ -1,0 +1,331 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="../CSS/web.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v5.0"></script>
+  <script src="../JS/validacion1.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <title>Dieta</title>
+</head>
+
+<body>
+  <noscript>
+    <p>Bienvenido a Mi Sitio</p>
+    <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript. Si lo has deshabilitado
+      intencionadamente, por favor vuelve a activarlo.</p>
+  </noscript>
+  <!--Side nav-->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+      <div class="sidenav-header">
+        <img src="../IMG/elegantgymlogo.png" alt="">
+      </div>
+      <hr class="light" />
+      <li>
+        <a href="../index.html">Inicio</a>
+      </li>
+      <li><a href="entrenamientos.html">Entrenamientos</a></li>
+      <li><a href="#">Dieta</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <hr class="light" />
+
+    <div class="container-fluid">
+      <div class="row col-12  padding ">
+        <a href="contacto.html">
+          <button type="button" class="btn btn-outline-danger btn-lg sidepills">
+            Hazte socio
+          </button>
+        </a>
+      </div>
+      <div class="row col-12">
+      </div>
+    </div>
+
+  </div>
+  <!--Fin sidenav-->
+  <!-- Nav bar-->
+  <nav class="navbar navbar-custom navbar-dark navbar-expand-md fixed-top">
+    <div class="container-fluid">
+      <div>
+        <img class='navbar-brand' src="../IMG/elegantgymlogo.png" />
+      </div>
+      <button type="button" id="sidebarCollapse" class="navbar-toggler  d-lg-none pointer" onclick="openNav()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="entrenamientos.html">Entrenamientos</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="dieta.html">Dieta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Fin navbar-->
+  <!--Carousel-->
+  <div id="demo" class="carousel slide" data-ride="carousel" data-interval="7000">
+    <div class="carouselindicators">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image:url(../IMG/dietcarousel1.jpg) ;">
+
+        <div class=" carousel-caption">
+          <h1 class="display-4">Dieta</h1>
+
+          <a class="btn btn-primary btn-lg" href="#tipos">
+            Tipos
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image:url(../IMG/dietcarousel2.jpg) ;">
+      </div>
+      <div class="carousel-item" style="background-image:url(../IMG/dietcarousel3.jpg) ;">
+      </div>
+    </div>
+    <div class="carouselcontrol">
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+  <!--Fin carousel-->
+  <!--Dietas introducción-->
+  <br>
+  <div class="container-fluid padding offset" id="tipos">
+    <div class="importante text-center">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="display-4">La nutrición</h2>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="row text-center ">
+      <div class="col-12">
+        <p>
+          Nuestro servicio de nutrición y dietética está integrado por dietistas y nutricionistas titulados y
+          especializados en área clínica y/o deportiva. El abordaje de cada caso es totalmente personalizado. Cada
+          dieta se adapta a cada persona con un único fin: facilitar la alimentación y proporcionar ideas y cambios
+          constantes de pauta, para que prevalezca el factor motivación de principio a fin.
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <!--Fin dieta introducción-->
+  <!--Tipos de dieta-->
+  <div class="container-fluid padding ceto">
+    <div class="row padding text-center">
+      <div class="col-md-6">
+        <h2>Dieta cetogénica</h2>
+        <p>La dieta cetogénica es un plan de alimentación bajo en hidratos de carbono y rico en grasas que comparte
+          muchas similitudes con las dietas Atkins y aquellas bajas en carbohidratos.
+          Esta dieta implica reducir los carbohidratos de forma drástica y reemplazarlos por grasas. Esta disminución
+          expone al cuerpo a un estado metabólico llamado cetosis.
+          Cuando ocurre esto, el cuerpo se vuelve increíblemente eficiente y consigue convertir toda la grasa en
+          energía. También convierte la grasa en cetonas dentro del hígado, lo que puede suministrar más energía al
+          cerebro.
+          Las dietas cetogénicas pueden causar reducciones en el azúcar de la sangre y en los niveles de insulina. Esto,
+          junto al incremento de cetonas, proporciona numerosos beneficios para la salud.
+        </p>
+        <br />
+      </div>
+      <div class="col-md-6 ">
+        <img src="../IMG/keto.jpg" class="img-fluid dieta" />
+      </div>
+    </div>
+    <hr class="my-4" />
+  </div>
+
+  <div class="container-fluid padding vegetariana">
+    <div class="row padding text-center">
+      <div class="col-md-6">
+        <h2>Dieta vegetariana</h2>
+        <p>Las dietas vegetarianas siguen creciendo en popularidad. Las razones para seguir una dieta vegetariana son
+          variadas e incluyen beneficios para la salud, como la reducción del riesgo de sufrir enfermedad cardíaca,
+          diabetes y algunos tipos de cáncer.
+          Sin embargo, algunos vegetarianos consumen demasiados alimentos procesados, que pueden ser ricos en calorías,
+          azúcar, grasas y sodio, y podrían no consumir suficientes frutas, verduras, granos enteros y alimentos ricos
+          en calcio, perdiéndose los nutrientes que estos proporcionan.
+          Sin embargo, con un poco de planificación, una dieta vegetariana puede satisfacer las necesidades de personas
+          de todas las edades, incluyendo niños, adolescentes y mujeres embarazadas o en período de lactancia. La clave
+          es ser consciente de las propias necesidades nutricionales para poder planear una dieta que las satisfaga.</p>
+      </div>
+
+      <div class="col-md-6">
+        <img src="../IMG/vegetariana.jpg" class="img-fluid dieta " />
+      </div>
+
+    </div>
+    <hr class="my-4" />
+  </div>
+
+  <div class="container-fluid padding carnivora">
+    <div class="row padding text-center">
+      <div class="col-md-6">
+        <h2>Dieta carnívora</h2>
+        <p>La dieta carnívora es una versión más extrema de la dieta ceto, y, como su nombre lo indica, implica comer
+          únicamente alimentos de origen animal. Puedes comer todo tipo de carne, incluida la carne de res, pollo,
+          pescado, carnes de órganos, como el hígado y los riñones, y, si te crees muy valiente, las vísceras y el
+          cerebro. Además, la carne solo se puede sazonar con un poco de sal y pimienta, no se permiten otros
+          condimentos. Y aunque algunas variaciones de la dieta carnívora permiten productos lácteos con toda su grasa,
+          los seguidores más extremos excluyen por completo los lácteos. Si bien esto suena (y sí que lo es) extremo,
+          los defensores de la dieta carnívora dicen que consumir solo carne ayuda con muchas dolencias de salud, como
+          la fatiga, la obesidad y la salud digestiva.</p>
+
+        <br />
+      </div>
+      <div class="col-md-6">
+        <img src="../IMG/carnivore.jpg" class="img-fluid dieta " />
+      </div>
+    </div>
+  </div>
+
+  <!--Fin tipos dieta-->
+  <!-- Redes sociales -->
+  <hr />
+  <div class="container-fluid padding sociales">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h2>Redes sociales</h2>
+      </div>
+      <div class="col-12 social ">
+        <a href="https://twitter.com/ufvmadrid?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+            class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/ufvmadrid/?hl=es"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/ufvmadrid"><i class="fab fa-youtube"></i></a>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width=""
+          data-layout="box_count" data-action="like" data-size="small" data-share="false"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin redes sociales   -->
+  <!--Cookies-->
+  <div class="container-fluid">
+    <div id="contenedor-menu">
+      <div id="barraaceptacion">
+        <p>
+          Esta web utiliza cookies. Si continúas navegando consideramos que
+          aceptas su uso.
+        </p>
+        <button class="btn btn-primary btn-sm" onclick="ponerCookie()">
+          Estoy de acuerdo
+        </button>
+
+      </div>
+    </div>
+  </div>
+  <!--Fin cookies-->
+  <!-- Footer-->
+  <footer>
+    <div class="row text-center footer">
+      <div class="col-md-6">
+        <img src="../IMG/elegantgymlogo.png" alt="">
+        <hr class=" light" />
+        <p>Teléfono: 915578936</p>
+        <p>Correo: roig@gmail.com</p>
+        <p>Ubicación: Calle de las Peñuelas, 12, 28005 Madrid</p>
+      </div>
+      <div class="col-md-6">
+        <hr class="light" />
+        <h5>Horarios</h5>
+        <hr class="light" />
+        <p>Lunes: 6am-23pm</p>
+        <p>Martes: 6am-23pm</p>
+        <p>Miercoles: 6am-23pm</p>
+        <p>Jueves: 6am-23pm</p>
+        <p>Viernes: 10am-21pm</p>
+        <p>Sábados ,domingos y festivos: Cerrado</p>
+      </div>
+      <div class="col-12">
+        <hr class="light-100" />
+        <h5>&copy; FeelingFit.com</h5>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!--Fin footer-->
+  <!--Overlay sidebar-->
+  <div id="overlayint"></div>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar', {
+      duration: 2000,
+      origin: 'left'
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('.carousel', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px'
+    });
+
+    window.sr = ScrollReveal();
+    sr.reveal('.offset', {
+      duration: 2000,
+      origin: 'rigth',
+      distance: '300px'
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('.ceto', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px'
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('.vegetariana', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px'
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('.carnivora', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px'
+    });
+
+    window.sr = ScrollReveal();
+    sr.reveal('.sociales', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('.footer', {
+      duration: 2000,
+      origin: 'bottom',
+    });
+  </script>
+</body>
+
+</html>

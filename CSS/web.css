@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  
+}
+.pointer {
+  cursor: pointer;
+}
+
+.narrow{
+  width: 75%;
+  margin:0 auto;
+  padding-top: 2rem; ;
+}
+
+/* Galeria de imagenes index*/
+.galeria h1 {
+  text-align: center;
+  margin: 20px 0 15px 0;
+  font-weight: 300;
+}
+
+.container-imagenes {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.container-imagenes .imagen {
+  width: 32%;
+  position: relative;
+  height: 250px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 600px) {
+  .container-imagenes .imagen {
+    width: 100%;
+  }
+  .display-4{
+    font-size: 60px !important;
+  }
+}
+
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*Para que a pesar de que se deforme la imagen no pierda demasiada definicion */
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+.overlay h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  /*Para que quede el texto centrado en la mitad de la imagen*/
+  transform: translate(-50%, -50%);
+}
+.imagen:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+/*Fin galeria de imagenes index*/
+
+/*Inicio navbar*/
+.navbar-custom{
+  background: rgba(0, 0, 0, 0.6) !important ;
+}
+.navbar-brand {
+  height: 5rem;
+}
+
+.nav-link{
+  color: white;
+}
+
+.navbar-nav li {
+  padding-right: 15px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+/*Fin navbar*/
+
+
+/*Inicio carousel*/
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+.carousel-item{
+  height: 100vh;
+}
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  
+}
+.carousel-caption h1 {
+  font-size: 500%;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px black;
+}
+
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500%;
+  text-shadow: 1px 1px 10px black;
+  padding-bottom: 1rem;
+}
+/*Fin carousel*/
+
+/*Fin estilo de los botones*/
+.padding {
+  padding-bottom: 2rem;
+}
+
+.tdieta{
+  margin-left: 60px;
+}
+/*Inicio estilo welcome*/
+.importante {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.importante hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+/*Fin estilo welcome*/
+
+/*Inicio sociales*/
+
+
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+.fa-google-plus-g {
+  color: #dd4b39;
+}
+.fa-instagram {
+  color: #517fa4;
+}
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+  color: #d5d5d5;
+}
+/*Fin sociales*/
+
+/*Inicio cartas zoom*/
+.card{
+  overflow: hidden;
+}
+.zoom {
+  padding: 50px;
+  background-color: none;
+  transition: transform 0.2s; /* Animacion */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.zoom:hover {
+  transform: scale(1.3);  
+}
+/*Fin cartas zoom*/
+
+.wellness {
+  background-color: #d3d3d3;
+  padding: 20px;
+
+}
+
+.dieta{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.63), 0 6px 20px 0 rgba(0, 0, 0, 0.637);
+  width: 500px;
+  height: auto;
+}
+
+/*Inicio footer*/
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+footer a {
+  color: #d5d5d5;
+}
+/*Fin footer*/
+/*Inicio estilos hr*/
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+/*Fin estilos hr*/
+
+/*Media Queries */
+@media (max-width: 900px) {
+  
+  .carousel-caption h1 {
+    font-size: 320%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 100%;
+    font-weight: 400%;
+    padding-bottom: 0.2rem;
+  }
+  .carousel-caption.btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+  .carouselindicators {
+    display: none;
+  }
+  .carouselcontrol{
+    display: none;
+  }
+  
+
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 35%;
+  }
+
+  
+  .carousel-caption.btn {
+    font-size: 100%;
+    
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a {
+    font-size: 2em;
+    padding: 0.7rem;
+  }
+}
+
+/*--- Imagen fixed --*/
+.darkcontacto{
+  color: white;
+  padding: 5rem 2rem;
+}
+.darkindex{
+  color: white;
+  padding: 10rem 2rem;
+}
+
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center ;
+  transform: translateZ(0);  
+}
+
+/*Cookies*/
+#contenedor-menu {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 999999;
+  display: block;
+  width: 100%;
+  
+}
+#barraaceptacion {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #eeeeee;
+}
+#barraaceptacion p {
+  font-size: 12px;
+  text-align: center;
+  height:auto;
+}
+
+/*SIDENAV*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99998;
+  top: 0;
+  right: 0;
+  background: #2d3135;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  right: 0;
+}
+.sidenav a {
+  display: block;
+  padding: 20px 30px;
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+}
+.sidenav ul {
+  padding: 0;
+}
+
+.sidenav li:hover {
+  border-left: 9px solid #3e84c1;
+  background-color: #34383d;
+  
+}
+.sidenav a:hover {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+
+#overlayint {
+  position: fixed;
+  display: none;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 997;
+  transition: all 0.4s ease-in-out;
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .sidenav {
+    padding-top: 50px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  
+}
+/*FIN SIDENAV*/
+/*FORMULARIO*/
+.content {
+  background: #181818;
+  color: #fff;  
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.logo span {
+  color: purple;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+
+.contact-wrapper {
+  padding: 1em;
+}
+
+.contact-form {
+  background: #222222;
+  
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+  display: block;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form .block {
+  grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid purple;
+}
+
+.contact-form form button {
+  background:purple;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: purple;
+  color: #fff;
+  transition: background-color 0.3s ease-out;
+  outline: 0;
+}
+
+/* Mas información contacto */
+.contact-info {
+  background: #000;
+  
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+
+@media(min-width: 700px) {
+  .content {
+      padding: 0 4em;
+  }
+  .contact-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+      padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+      text-align: left;
+  }
+}
+/*Fin formulario*/
+/*Galeria*/
+
+.galeriaentrena img{
+  max-width: 100%;
+  filter: grayscale(100%);
+  transition: .2s;
+}
+/*Seleccionar todas las clases dentro de row y no padding cuya clase empiece por col*/
+.row.no-padding [class*=col-]{
+  padding: 0;
+
+}
+.galeriaentrena{
+  overflow: hidden;
+}
+.galeriaentrena img:hover{
+  filter: grayscale(0);
+  transform:scale(1.1) ;
+  cursor: zoom-in;
+}
+
+
+/*Para que el menu no se ponga encima el menu*/
+.offset:before{
+height: 3.8rem;
+margin-top:-3.8rem;
+content: "";
+display: block;
+}
+.jumbotron{
+  border-radius: 0;
+  padding: 3rem 0 2rem;
+  margin-bottom: 0;
+}
+h3.heading{
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-bottom:1.9rem ;
+}
+.heading-underline{
+  width: 4rem;
+  height: .2rem;
+  background-color: #1ebba3;
+  margin: 0 auto 2rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

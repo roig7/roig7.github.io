@@ -1,0 +1,342 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="../CSS/web.css" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v5.0"></script>
+  <script src="../JS/validacion1.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <link rel="stylesheet" href="../CSS/lightbox.css">
+  <script src="../JS/lightbox.js"></script>
+  <title>Entrenamientos</title>
+</head>
+
+<body>
+  <noscript>
+    <p>Bienvenido a Mi Sitio</p>
+    <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript. Si lo has deshabilitado
+      intencionadamente, por favor vuelve a activarlo.</p>
+  </noscript>
+  <!--Side nav-->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+      <div class="sidenav-header">
+        <img src="../IMG/elegantgymlogo.png" alt="" />
+      </div>
+      <hr class="light" />
+      <li>
+        <a href="../index.html">Inicio</a>
+      </li>
+      <li><a href="#">Entrenamientos</a></li>
+      <li><a href="dieta.html">Dieta</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <hr class="light" />
+    <div class="container-fluid">
+      <div class="row col-12  padding ">
+        <a href="contacto.html">
+          <button type="button" class="btn btn-outline-danger btn-lg sidepills">
+            Hazte socio
+          </button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!--Fin sidenav-->
+  <!-- Nav bar-->
+  <nav class="navbar navbar-custom navbar-dark navbar-expand-md fixed-top">
+    <div class="container-fluid">
+      <div>
+        <img class='navbar-brand' src="../IMG/elegantgymlogo.png" />
+      </div>
+      <button type="button" id="sidebarCollapse" class="navbar-toggler  d-lg-none pointer" onclick="openNav()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="entrenamientos.html">Entrenamientos</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="dieta.html">Dieta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Fin navbar-->
+  <!--Carousel-->
+  <div id="demo" class="carousel slide" data-ride="carousel" data-interval="7000">
+    <div class="carouselindicators">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image:url(../IMG/entrenacarousel1.jpg) ;">
+
+        <div class=" carousel-caption">
+          <h1 class="display-4">Workout</h1>
+
+          <a class="btn btn-primary btn-lg" href="#personal">
+            Personal
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image:url(../IMG/entrenacarousel2.jpg) ;">
+      </div>
+      <div class="carousel-item" style="background-image:url(../IMG/entrenacarousel3.jpg) ;">
+      </div>
+    </div>
+    <div class="carouselcontrol">
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+  <!--Fin carousel-->
+  <!--Galeria-->
+  <div class="jumbotron container-fluid gal">
+    <div class="col-12 text-center">
+      <h3 class="heading text-center">Tracciones y empujes</h3>
+      <div class="heading-underline"></div>
+    </div>
+
+    <div class="row no-padding">
+      <div class="col-sm-4">
+        <div class="galeriaentrena">
+          <a href="../IMG/traccion1.jpg" data-lightbox="galeriaentrena" data-title="Ejercicio de tracción"><img
+              src="../IMG/traccion1.jpg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="galeriaentrena">
+          <a href="../IMG/traccion2.jpg" data-lightbox="galeriaentrena" data-title="Ejercicio de tracción"><img
+              src="../IMG/traccion2.jpg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="galeriaentrena">
+          <a href="../IMG/tracciones3.jpg" data-lightbox="galeriaentrena" data-title="Ejercicio de tracción"><img
+              src="../IMG/tracciones3.jpg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="galeriaentrena">
+          <a href="../IMG/empujes1.jpg" data-lightbox="galeriaentrena" data-title="Ejercicio de empuje"><img
+              src="../IMG/empujes1.jpg" alt=""></a>
+        </div>
+      </div>
+
+
+      <div class="col-sm-4">
+        <div class="galeriaentrena">
+          <a href="../IMG/empujes2.jpg" data-lightbox="galeriaentrena" data-title="Ejercicio de empuje"><img
+              src="../IMG/empujes2.jpg" alt=""></a>
+        </div>
+      </div>
+
+
+      <div class="col-sm-4">
+        <div class="galeriaentrena">
+          <a href="../IMG/empujes3.jpg" data-lightbox="galeriaentrena" data-title="Ejercicio de empuje"><img
+              src="../IMG/empujes3.jpg" alt=""></a>
+        </div>
+      </div>
+
+      <div class="narrow text-center">
+        <div class="col-12">
+          <p class="lead">
+            Descuento:
+          </p>
+          <a class="btn btn-outline-secondary ">BLACK50</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!--Fin galeria-->
+  <!-- Personal-->
+  <div id="personal">
+    <div class="col-12 text-center offset">
+      <h3 class="heading ">Equipo</h3>
+      <div class="heading-underline"></div>
+    </div>
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="../IMG/personal1.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Básico</h4>
+              <p class="card-text">
+                Tenemos varios tipos de entrenamientos para aquellos que se
+                inician en el gimnasio.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="../IMG/personal2.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Intermedio</h4>
+              <p class="card-text">
+                Contamos con entrenamientos para aquellos que quieren dar un
+                nivel mas a su entrenamiento de pesas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="../IMG/personal3.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Avanzado</h4>
+              <p class="card-text">
+                Entrenamientos personalizados para aquellos que intente
+                maximizar su potencial de crecimiento muscular, ahora que las
+                ganancias se han visto reducidas tras los años de gimnasio
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fin personal-->
+  <!-- Redes sociales -->
+  <hr />
+  <div class="container-fluid padding sociales">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h2>Redes sociales</h2>
+      </div>
+      <div class="col-12 social ">
+        <a href="https://twitter.com/ufvmadrid?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+            class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/ufvmadrid/?hl=es"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/ufvmadrid"><i class="fab fa-youtube"></i></a>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width=""
+          data-layout="box_count" data-action="like" data-size="small" data-share="false"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin redes sociales   -->
+  <!--Cookies-->
+  <div class="container-fluid">
+    <div id="contenedor-menu">
+      <div id="barraaceptacion">
+        <p>
+          Esta web utiliza cookies. Si continúas navegando consideramos que
+          aceptas su uso.
+        </p>
+        <button class="btn btn-primary btn-sm" onclick="ponerCookie()">
+          Estoy de acuerdo
+        </button>
+
+      </div>
+    </div>
+  </div>
+  <!--Fin cookies-->
+  <!-- Footer-->
+  <footer>
+    <div class="row text-center footer">
+      <div class="col-md-6">
+        <img src="../IMG/elegantgymlogo.png" alt="">
+        <hr class=" light" />
+        <p>Teléfono: 915578936</p>
+        <p>Correo: roig@gmail.com</p>
+        <p>Ubicación: Calle de las Peñuelas, 12, 28005 Madrid</p>
+      </div>
+      <div class="col-md-6">
+        <hr class="light" />
+        <h5>Horarios</h5>
+        <hr class="light" />
+        <p>Lunes: 6am-23pm</p>
+        <p>Martes: 6am-23pm</p>
+        <p>Miercoles: 6am-23pm</p>
+        <p>Jueves: 6am-23pm</p>
+        <p>Viernes: 10am-21pm</p>
+        <p>Sábados ,domingos y festivos: Cerrado</p>
+      </div>
+      <div class="col-12">
+        <hr class="light-100" />
+        <h5>&copy; FeelingFit.com</h5>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!--Fin footer-->
+  <!--Overlay sidebar-->
+  <div id="overlayint"></div>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar', {
+      duration: 2000,
+      origin: 'left'
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('.carousel', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px'
+    });
+
+    window.sr = ScrollReveal();
+    sr.reveal('.gal', {
+      duration: 2000,
+      origin: 'rigth',
+      distance: '300px'
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('.offset', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px'
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('.sociales', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '300px'
+    });
+    window.sr = ScrollReveal();
+    sr.reveal('.footer', {
+      duration: 2000,
+      origin: 'bottom',
+    });
+  </script>
+</body>
+
+</html>
